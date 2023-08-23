@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rádio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .icon {
+            text-align: center;
+            margin: 20px;
+        }
+        .icon img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Rádio Web</h1>
+    </header>
+
+    <div class="container">
+        <div class="icon">
+            <a href="painel.html"><img src="painel-icon.png" alt="Painel"></a>
+            <p>Painel</p>
+        </div>
+        <div class="icon">
+            <a href="estacoes.html"><img src="estacoes-icon.png" alt="Estações"></a>
+            <p>Estações</p>
+        </div>
+        <!-- Adicione mais ícones e seções aqui -->
+        
+        <div class="section">
+            <h2>Reprodução Automática de Música</h2>
+            <audio controls autoplay>
+                <source src="caminho/para/sua/musica.mp3" type="audio/mpeg">
+                Seu navegador não suporta a reprodução de áudio.
+            </audio>
+        </div>
+
+        <div class="section">
+            <h2>Transmissão ao Vivo</h2>
+            <iframe width="560" height="315" src="URL_da_transmissao_ao_vivo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
