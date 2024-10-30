@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Passagem Aérea - Belém para Caxias do Sul</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 60px;
+            text-align: center;
+        }
+
+        header h1, header p {
+            margin: 0;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section, .details-section {
+            width: 48%;
+        }
+
+        .form-section h2, .details-section h2 {
+            color: #2c3e50;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group select {
+            padding: 10px;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .buy-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .buy-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilo para informações de bagagem e detalhes de voo */
+        .info-section {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info-section i {
+            font-size: 1.5em;
+            color: #3498db;
+        }
+
+        .info-section h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .info-section p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+
+        .details-info h4 {
+            margin: 10px 0;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Compra de Passagem Aérea - Belém para Caxias do Sul</h1>
+        <p>Preencha os dados abaixo para concluir sua compra</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Formulário de Dados do Passageiro -->
+        <div class="form-section">
+            <h2><i class="fas fa-user"></i> Dados do Passageiro</h2>
+
+            <!-- Informações de Bagagem -->
+            <div class="info-section">
+                <i class="fas fa-suitcase-rolling"></i>
+                <div>
+                    <h3>Seu voo só inclui bagagem de mão</h3>
+                    <p><strong>IDA:</strong> BEL (Belém) ➔ CXJ (Caxias do Sul)</p>
+                    <p>Inclui uma mochila ou bolsa que deve caber embaixo do assento dianteiro.</p>
+                    <p>Inclui bagagem de mão, que deve caber no compartimento superior do avião.</p>
+                    <p><strong>Não inclui bagagem para despachar.</strong> Você poderá adicionar malas por um valor adicional ao chegar ao aeroporto.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Insira o nome do passageiro" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Último Sobrenome</label>
+                    <input type="text" placeholder="Insira o último sobrenome do passageiro" required>
+                </div>
+
+                <div class="form-group">
+                    <label>País de Residência</label>
+                    <select required>
+                        <option value="Brasil">Brasil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo e Número de Documento</label>
+                    <select required>
+                        <option value="CPF">CPF</option>
+                    </select>
+                    <input type="text" placeholder="Número do documento" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Data de Nascimento</label>
+                    <input type="text" placeholder="Dia" style="width: 30%;" required>
+                    <input type="text" placeholder="Mês" style="width: 30%;" required>
+                    <input type="text" placeholder="Ano" style="width: 30%;" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sexo</label>
+                    <input type="radio" name="sexo" value="feminino" required> Feminino
+                    <input type="radio" name="sexo" value="masculino" required> Masculino
+                </div>
+
+                <h2>Onde enviamos seus vouchers?</h2>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Insira seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirme o seu E-mail</label>
+                    <input type="email" placeholder="Insira seu e-mail novamente" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" checked>
+                    <label>Quero receber as melhores ofertas!</label>
+                </div>
+
+                <p>Para mais informações, consulte as <a href="#">políticas de privacidade</a>.</p>
+
+<script>
+    // Função para verificar se todos os campos obrigatórios estão preenchidos
+    function validarCampos() {
+        const camposObrigatorios = document.querySelectorAll("input[required], select[required]");
+        const botaoCompra = document.getElementById("botao-compra");
+        
+        // Verificar se todos os campos obrigatórios estão preenchidos
+        const todosPreenchidos = Array.from(camposObrigatorios).every(campo => campo.value.trim() !== "");
+        
+        // Habilitar ou desabilitar o botão de compra
+        botaoCompra.disabled = !todosPreenchidos;
+    }
+
+    // Adicionar eventos de input para verificar os campos em tempo real
+    document.querySelectorAll("input[required], select[required]").forEach(campo => {
+        campo.addEventListener("input", validarCampos);
+    });
+</script>
+
+<button id="botao-compra" class="btn-purchase" onclick="window.location.href='https://nubank.com.br/cobrar/52uim/67215eb7-55af-4db2-9e80-0f96afb34652'" disabled>Comprar</button>
+
+
+
+        </div>
+
+        <!-- Seção de Detalhes do Pagamento e Política -->
+        <div class="details-section">
+            <div class="info-section">
+                <i class="fas fa-plane-departure"></i>
+                <div>
+                    <h3>Detalhe do Pagamento</h3>
+                    <p><strong>TOTAL:</strong> R$1850</p>
+                    <h4>Detalhe da compra</h4>
+                    <p>Belém - Caxias do Sul, Somente Ida, 1 adulto</p>
+                    <p><strong>IDA:</strong> 04 nov 2024 - Azul - 17:00 - 1 escala - CXJ 14:40+1</p>
+                    <p><strong>Duração:</strong> 21h 40m</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+    <i class="fas fa-file-alt"></i>
+    <div>
+        <h3>Política de Alterações e Cancelamentos</h3>
+        <h4>Alterações</h4>
+        <p>Alterações na data ou horário da passagem são permitidas, mas podem estar sujeitas a taxas adicionais e a disponibilidade de assentos. Consulte as condições específicas para cada caso.</p>
+        
+        <h4>Cancelamento</h4>
+        <p>Cancelamentos da passagem são permitidos mediante pagamento de uma taxa de cancelamento, que pode variar conforme a política da companhia aérea.</p>
+        
+        <p><strong>Política de cancelamento integral:</strong> caso o cancelamento seja solicitado até 24 horas após a compra e com pelo menos 7 dias de antecedência em relação à data de embarque, será concedido reembolso integral, sem cobrança de taxas.</p>
+        
+        <p><em>Observação:</em> As políticas podem variar conforme a tarifa adquirida. Verifique os termos completos ou entre em contato com o suporte para informações detalhadas.</p>
+    </div>
+</div>
